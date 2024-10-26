@@ -1,0 +1,26 @@
+{
+  "$schema": "./.sitecore/schemas/RootConfigurationFile.schema.json",
+  "modules": [
+    "src/Feature/*/*/*.module.json",
+    "src/Feature/*/*.module.json",
+    "src/Project/*.module.json",
+    "src/Foundation/*.module.json",
+    "src/Foundation/*/*.module.json"
+  ],
+  "plugins": [
+    "Sitecore.DevEx.Extensibility.Publishing@5.1.25",
+    "Sitecore.DevEx.Extensibility.Serialization@5.1.25",
+    "Sitecore.DevEx.Extensibility.Indexing@5.1.25"
+  ],
+  "serialization": {
+    "defaultMaxRelativeItemPathLength": 100,
+    "defaultModuleRelativeSerializationPath": "items",
+    "removeOrphansForRoles": true,
+    "continueOnItemFailure": false,
+    "excludedFields": []
+  },
+  "settings": {
+    "telemetryEnabled": false,
+    "versionComparingEnabled": true
+  }
+}
